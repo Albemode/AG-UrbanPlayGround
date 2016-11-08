@@ -1,0 +1,13 @@
+<h2 class="title">Events Index</h2>
+
+
+			<% @events.each do |event| %>
+
+				<%= event.id %>
+				<%= event.title %>
+        <%= event.description %>
+        <%= event.start_at %>
+        <%= event.location %>
+				<%= link_to 'Show', event_path(event.id) %>
+
+			<% end %>
