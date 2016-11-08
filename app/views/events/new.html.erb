@@ -1,0 +1,15 @@
+<h1>This is where we would like to add new events</h1>
+
+
+<%= form_for @event do |f| %>
+  <%= f.label :Event %><br>
+  <%= f.text_area :title %><br>
+  <%= f.label :Description %><br>
+  <%= f.text_area :description, size: "44x10" %><br>
+  <%= f.label :Start_time %><br>
+  <%= f.date_field(:start_at) %><br>
+  <%= f.label :Which_park %><br>
+  <%= f.text_area(:location ) %><br>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.submit "Create" %>
+<% end %>

@@ -1,0 +1,11 @@
+
+
+<%= @event.title %>.
+<%= @event.description %>
+<%= @event.start_at %>
+<%= @event.location %>
+
+<br>
+<br>
+
+<%= link_to 'Cancel Event',  { action: :destroy, id: @event.id }, method: :delete, data: { confirm: 'Are you sure?' } %>

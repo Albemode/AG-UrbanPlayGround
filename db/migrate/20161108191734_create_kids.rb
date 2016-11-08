@@ -6,6 +6,7 @@ class CreateKids < ActiveRecord::Migration[5.0]
       t.string :gender, :limit => 1
       t.text :hobbies
       t.integer :user_id
+      t.references :user, foreign_key: true
 
 
       t.timestamps
