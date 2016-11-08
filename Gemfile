@@ -17,12 +17,11 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 gem 'geocoder'
-<<<<<<< HEAD
+
 
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
-=======
->>>>>>> bertoagent
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
