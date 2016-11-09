@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109192103) do
+
+ActiveRecord::Schema.define(version: 20161109203033) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title"
@@ -20,9 +21,6 @@ ActiveRecord::Schema.define(version: 20161109192103) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.float    "longitude"
-    t.float    "latitude"
-    t.string   "address"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 
@@ -62,6 +60,8 @@ ActiveRecord::Schema.define(version: 20161109192103) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "fname"
+    t.string   "lname"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

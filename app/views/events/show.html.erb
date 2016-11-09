@@ -10,7 +10,6 @@
 
 <br>
 <br>
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom16&markers=#{@event.latitude},#{@event.longitude}&markers=#{@event.latitude},#{@event.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
-            class: 'img-fluid img-rounded', alt: "#{@event.address} on the map"%>
 
+<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <%= link_to 'Cancel Event',  { action: :destroy, id: @event.id }, method: :delete, data: { confirm: 'Are you sure?' } %>
