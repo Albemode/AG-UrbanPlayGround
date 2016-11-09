@@ -3,26 +3,38 @@
   <head>
     <title>UpgApp</title>
     <%= csrf_meta_tags %>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"">
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </script>
   </head>
 
   <body>
-
-
-
-  	<nav id="navbar">
-      <ul>
-        <li><%#= link_to "Profile", edit_user_path %></li>
-        <li><%= link_to "Events", events_path %></li>
-        <li><%#= link_to "Contact", contacts_path %></li>
+<nav class="navbar navbar-static-top navbar-light bg-faded">
+      <a href="#" class="navbar-brand">Urban Playground</a>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Map</a>
+        </li>
       </ul>
     </nav>
-
-
-
-
     <%= yield %>
   </body>
 </html>
