@@ -11,6 +11,12 @@ html {
 	margin-top: 25px;
 }
 
+
+.nav-link {
+	font-size: 18px;
+	margin-top: 25px;
+	margin-right: 40px;
+}
 h1 {
 	color: orange;
 }
