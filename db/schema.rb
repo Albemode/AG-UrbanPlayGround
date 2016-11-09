@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20161108200734) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "kids", force: :cascade do |t|
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20161108200734) do
     t.integer  "user_id"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+    t.index ["user_id"], name: "index_kids_on_user_id"
   end
 
   create_table "locations", force: :cascade do |t|
