@@ -1,7 +1,58 @@
-<div id="Info">
-    <p>
-        <strong>Email:</strong>
-       <span><%=@user.email%></span>
-    </p>
+<h1> Parent Information </h1>
 
+<div id="info" class="container-fluid">
+    <div class="table-responsive">
+    	<table class="table">
+			<tr>
+				<td>Email</td>
+				<td>First Name</td>
+				<td>Last Name</td>
+			</tr>
+      <tr>
+        <td> <%= @user.email %><td>
+				<td><%= @user.fname %></td>
+				<td><%= @user.lname %></td>
+        <td><%= link_to 'Show', edit_user_registration_path(@user) %></td>
+			</tr>
+
+		</table>
+    </div>
+</div>
+
+<h1> Kid Information </h1>
+<div id="info" class="container-fluid">
+    <div class="table-responsive">
+    	<table class="table">
+<tr>
+  <td>Name</td>
+  <td>Age</td>
+  <td>Gender</td>
+  <td>Hobbies</td>
+</tr>
+<% @kids.each do |kid| %>
+<tr>
+  <td><%= kid.name %></td>
+  <td><%= kid.age %></td>
+  <td><%= kid.gender %></td>
+  <td><%= kid.hobbies %></td>
+</tr>
+<% end %>
+</table>
+</div>
+</div>
+
+<h1> Add a child </h1>
+<div>
+<%= form_for @kid do |f| %>
+  <%= f.label :Name %><br>
+  <%= f.text_area :name %><br>
+  <%= f.label :Age %><br>
+    <%= f.number_field :age %><br>
+    <%= f.label :Gender %><br>
+    <%= f.text_area :gender %><br>
+    <%= f.label :Hobbies %><br>
+    <%= f.text_area :hobbies %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.submit "Create" %>
+<% end %>
 </div>
