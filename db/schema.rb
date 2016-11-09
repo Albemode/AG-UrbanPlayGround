@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20161109203033) do
 
+
   create_table "events", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
