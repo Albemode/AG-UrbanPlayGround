@@ -15,7 +15,12 @@
   <%= @location.longitude %>
 </p>
 
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom16&markers=#{@location.latitude},#{@location.longitude}&markers=#{@location.latitude},#{@location.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+<p>
+  <strong>Title:</strong>
+  <%= @location.title %>
+</p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom30&markers=#{@location.latitude},#{@location.longitude}&markers=#{@location.latitude},#{@location.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
             class: 'img-fluid img-rounded', alt: "#{@location.address} on the map"%>
 
 

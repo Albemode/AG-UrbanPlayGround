@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108200734) do
+ActiveRecord::Schema.define(version: 20161109192103) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title"
@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 20161108200734) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.float    "longitude"
+    t.float    "latitude"
+    t.string   "address"
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "kids", force: :cascade do |t|
@@ -30,6 +34,7 @@ ActiveRecord::Schema.define(version: 20161108200734) do
     t.integer  "user_id"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+    t.index ["user_id"], name: "index_kids_on_user_id"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -40,6 +45,8 @@ ActiveRecord::Schema.define(version: 20161108200734) do
     t.float    "longitude"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "title"
+    t.string   "name"
   end
 
   create_table "users", force: :cascade do |t|
