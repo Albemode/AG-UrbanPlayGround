@@ -20,19 +20,17 @@
 <nav class="navbar navbar-static-top navbar-light bg-faded">
       <a href="#" class="navbar-brand">Urban Playground</a>
       <ul class="nav navbar-nav">
+        <% if user_signed_in? %>
         <li class="nav-item active">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/events">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/locations">Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Profile</a>
+          <a class="nav-link" href="/users/<%= current_user.id %>">Profile</a>
         </li>
-        <% if user_signed_in? %>
+
     <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
   <% else %>
     <li><%= link_to "Sign in", new_user_session_path %></li>
