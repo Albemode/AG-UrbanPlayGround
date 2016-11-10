@@ -5,6 +5,11 @@ class LocationsController < ApplicationController
   # GET /locations.json
   def index
     @locations = Location.all
+    @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
+      marker.lat location.latitude
+      marker.lng location.longitude
+      marker.infowindow location.title
+    end
   end
 
   # GET /locations/1
@@ -68,6 +73,6 @@ class LocationsController < ApplicationController
     end
 
     def location_params
-      params.require(:location).permit(:address, :origin, :destination, :latitude, :longitude)
+      params.require(:location).permit(:address, :origin, :title, :name, :destination, :latitude, :longitude)
     end
 end

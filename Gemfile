@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 gem 'geocoder'
+gem 'gmaps4rails'
 
 
 gem 'bootstrap-sass', '~> 3.2.0'
