@@ -4,15 +4,15 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Locations Page</h1>
+<h1>Events Page</h1>
 
 <table>
   <thead>
     <tr>
       <th>Address</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
+
       <th>Title</th>
+      <th></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -32,18 +32,26 @@
 </table>
 
 <br>
-
-<%= link_to 'New Location', new_location_path %>
+<%#= @hash %>
+<%= link_to 'New Event', new_location_path %>
 
 
 <div style='width: 800px;'>
   <div id="map" style='width: 800px; height: 400px;'></div>
 </div>
 <script type="text/javascript">
+  markers_json=<%=raw @hash.to_json %>
   handler = Gmaps.build('Google');
   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
     markers = handler.addMarkers(<%=raw @hash.to_json %>);
     handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
+
+    // for (i=1; i<markers.length; i++) {
+    //   var link= <%=  %>
+    //   google.maps.event.addListener(markers[i].getServiceObject(), 'click',function(){
+    //     window.open(link);
+    //   })
+    // }
+    // handler.fitMapToBounds();
 });
 </script>

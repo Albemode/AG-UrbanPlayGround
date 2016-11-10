@@ -4,6 +4,7 @@ class LocationsController < ApplicationController
   # GET /locations
   # GET /locations.json
   def index
+    # @events = Event.all
     @locations = Location.all
     @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
       marker.lat location.latitude
@@ -15,6 +16,10 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+    # @markers = @event.markers
+    # @gmaps_options = @markers.to_gmaps4rails
+    @location = Location.find(params[:id])
+
   end
 
   # GET /locations/new
@@ -30,6 +35,17 @@ class LocationsController < ApplicationController
   # POST /locations.json
   def create
     @location = Location.new(location_params)
+  #   Model.all.to_gmaps4rails do |object|
+  # "\"link\": \"your link as string\""
+# end
+
+    # @json = User.all.to_gmaps4rails do |user, marker|
+    #   marker.json "\"id\": #{user.id}"
+    #     # or
+    #   marker.json "\"link\": #{method_to_create_link}"
+    #   marker.infowindow "<h4><u>#{location_link}</u></h4>
+    #                    <i>#{location.address}</i>"
+  # end
 
     respond_to do |format|
       if @location.save
