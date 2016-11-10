@@ -476,8 +476,8 @@
     Map.prototype.default_options = function() {
       return {
         mapTypeId: this.primitives().mapTypes('ROADMAP'),
-        center: new (this.primitives().latLng)(0, 0),
-        zoom: 8
+        center: new (this.primitives().latLng)(40.730610, -73.935242),
+        zoom: 10
       };
     };
 
