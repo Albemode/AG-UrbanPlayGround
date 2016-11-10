@@ -23,11 +23,15 @@ h1 {
 .carousel{
     margin-top: 20px;
     height: 480px;
-
+    border-radius: 80px;
 }
+.carousel-inner {
+	background: none;
+}
+
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
-        border-radius: 20px;
+        border-radius: 80px;
 }
 .bs-example{
 	margin: 20px;
@@ -38,6 +42,7 @@ h1 {
 	position: relative;
     left: 730px;
 }
+
 /* This is for Users page */
 .h1 {
 	text-align: center;
@@ -56,4 +61,17 @@ h1 {
 
 .form {
 	text-align: center;
+}
+
+
+/* USER FORM */
+
+.user_form {
+	display: block;
+	position: relative;
+	left: 80px;
+}
+
+#new_user {
+	left: 80px;
 }
