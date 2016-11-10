@@ -34,3 +34,8 @@ h1 {
 	margin: 20px;
 }
 
+
+.tweets {
+	position: relative;
+    left: 730px;
+}
