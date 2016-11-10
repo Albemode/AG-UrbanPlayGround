@@ -1,8 +1,4 @@
 
-html {
-
-	background-color: green;
-}
 
 .navbar-brand {
 	color: green;
@@ -23,12 +19,13 @@ h1 {
 }
 
 .carousel{
-    background: #2f4357;
     margin-top: 20px;
-    height: 600px;
+    height: 480px;
+
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
+        border-radius: 20px;
 }
 .bs-example{
 	margin: 20px;
