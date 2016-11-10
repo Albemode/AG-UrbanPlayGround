@@ -1,5 +1,7 @@
 
-
+* {
+	margin: 0 auto;
+}
 .navbar-brand {
 	color: green;
 	font-family: 'Luckiest Guy', cursive;
@@ -40,6 +42,27 @@ h1 {
 	position: relative;
     left: 730px;
 }
+
+/* This is for Users page */
+.h1 {
+	text-align: center;
+	color: green;
+}
+
+.container {
+	float: left;
+
+	padding-left: 25px;
+	max-width: 600px;
+	font-size: 14px;
+	border-style: solid;
+	border-color: transparent;;
+}
+
+.form {
+	text-align: center;
+}
+
 
 /* USER FORM */
 
