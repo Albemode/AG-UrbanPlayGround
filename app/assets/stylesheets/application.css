@@ -40,3 +40,15 @@ h1 {
 	position: relative;
     left: 730px;
 }
+
+/* USER FORM */
+
+.user_form {
+	display: block;
+	position: relative;
+	left: 80px;
+}
+
+#new_user {
+	left: 80px;
+}
