@@ -1,3 +1,6 @@
+
+<h1 class="headline"> Your Family </h1>
+
 <div class="container">
   <h2 class="h1">Parent Information</h2>
   <table class="table">
@@ -46,8 +49,9 @@
   </div>
 </div>
 
-<h1 class="h1"> Add a child </h1>
-<div class="form">
+
+<div class="container">
+  <h1 class="h1"> Add a child </h1>
 <%= form_for @kid do |f| %>
   <%= f.label :Name %><br>
   <%= f.text_field :name %><br>
@@ -60,5 +64,4 @@
   <%= f.hidden_field :user_id, value: current_user.id %>
   <%= f.submit class: "btn btn-primary"  %>
 <% end %>
-</div>
 </div>
