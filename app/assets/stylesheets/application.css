@@ -1,5 +1,7 @@
 
-
+* {
+	margin: 0 auto;
+}
 .navbar-brand {
 	color: green;
 	font-family: 'Luckiest Guy', cursive;
@@ -21,11 +23,15 @@ h1 {
 .carousel{
     margin-top: 20px;
     height: 480px;
-
+    border-radius: 80px;
 }
+.carousel-inner {
+	background: none;
+}
+
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
-        border-radius: 20px;
+        border-radius: 80px;
 }
 .bs-example{
 	margin: 20px;
@@ -36,3 +42,65 @@ h1 {
 	position: relative;
     left: 730px;
 }
+<<<<<<< HEAD
+=======
+
+/* This is for Users page */
+.h1 {
+	text-align: center;
+	color: green;
+}
+
+.container {
+	text-align: center;
+	float: left;
+
+	padding: 20px;
+	max-width: 350px;
+	font-size: 14px;
+	border-style: solid;
+	border-color: transparent;;
+}
+
+.form {
+	text-align: center;
+}
+
+
+/* USER FORM */
+
+.user_form {
+	display: block;
+	position: relative;
+	left: 80px;
+}
+
+#new_user {
+	left: 80px;
+}
+
+.image {
+	width: 100%;
+	height: 300px;
+}
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.headline {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 60px;
+	color: green;
+	text-align: center;
+}
+>>>>>>> 492800c42717691a6d1eb2bf00eed7eab398302a
