@@ -19,6 +19,17 @@
 h1 {
 	color: orange;
 }
+/* Carousel */
+
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
 
 .carousel{
     margin-top: 20px;
