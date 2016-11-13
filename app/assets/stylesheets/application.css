@@ -17,8 +17,17 @@
 h1 {
 	color: orange;
 }
+
+h2 {
+	text-shadow: 2px 2px black;
+}
 /* Carousel */
 
+
+.car_img {
+	display: none;
+	height: 480px;
+}
 .overlay { 
   color:#fff;
   position:absolute;
@@ -27,6 +36,13 @@ h1 {
   left:0;
   width:100%;
   text-align:center;
+}
+
+#overlay_h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 52px;
+	color: white;
+	text-shadow: 2px 2px black;
 }
 
 .carousel{
