@@ -9,7 +9,7 @@
 
 <h1>Events Page</h1>
 
-<table>
+<table id="infobg">
   <thead>
     <tr>
       <th>Address</th>
@@ -20,7 +20,7 @@
     </tr>
   </thead>
 
-  <tbody id="infobg">
+  <tbody>
     <% @locations.each do |location| %>
       <tr class="infobg">
         <td><%= location.address %></td>
