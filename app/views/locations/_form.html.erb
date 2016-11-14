@@ -11,35 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="lfield">
 
   </div>
 
-  <div class="field">
+  <div class="lfield">
     <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
 
-  <div class="field">
-    <%= f.label :Description %>
+  <div class="lfield">
+    <%= f.label :Description %><br>
     <%= f.text_field :description %>
-  </div>
+  </div><br>
 
-  <div class="field">
+  <div class="lfield">
     <%= f.label :Start_time %>
     <%= f.date_field :start_at %>
   </div>
 
-  <div class="field">
+  <div class="lfield">
     <%= f.label :address %>
     	<%= select(:location, :address, [['Bryant Park NYC'],['Central Park NYC'],['Freshkills Park, Staten Island'],['Greenbelt, Staten Island'],['Bronx Park, Bronx'],['Marine Park, Brooklyn'],['Alley Pond Park, Queens'],['Flushing Meadow-Corona Park, Queens'],['Van Cortlandt Park, Bronx'],['Pelham Bay Park, Bronx'],['Columbus Park, NYC'],['Union Square Park, NYC'],['Roberto Clemente State Park, Bronx'],['Canarsie Park, Brooklyn'],['Brooklyn Bridge Park, Brooklyn']]) %>
   </div>
 
 
-
-
-
-  <div class="actions">
+  <div class="lactions">
     <%= f.submit %>
   </div>
 <% end %>
