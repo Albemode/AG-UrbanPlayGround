@@ -11,29 +11,21 @@
     </div>
   <% end %>
 
-  <div class="lfield">
 
-  </div>
 
   <div class="lfield">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="lfield">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %><br>
     <%= f.label :Description %><br>
-    <%= f.text_field :description %>
-  </div><br>
-
-  <div class="lfield">
-    <%= f.label :Start_time %>
-    <%= f.date_field :start_at %>
-  </div>
-
-  <div class="lfield">
-    <%= f.label :address %>
+    <%= f.text_field :description %><br>
+    <%= f.label :Start_time %><br>
+    <%= f.date_field :start_at %><br>
+    <%= f.label :address %><br>
     	<%= select(:location, :address, [['Bryant Park NYC'],['Central Park NYC'],['Freshkills Park, Staten Island'],['Greenbelt, Staten Island'],['Bronx Park, Bronx'],['Marine Park, Brooklyn'],['Alley Pond Park, Queens'],['Flushing Meadow-Corona Park, Queens'],['Van Cortlandt Park, Bronx'],['Pelham Bay Park, Bronx'],['Columbus Park, NYC'],['Union Square Park, NYC'],['Roberto Clemente State Park, Bronx'],['Canarsie Park, Brooklyn'],['Brooklyn Bridge Park, Brooklyn']]) %>
   </div>
+
+
+
 
 
   <div class="lactions">

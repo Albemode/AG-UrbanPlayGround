@@ -4,7 +4,9 @@
 }
 
 body {
-
+	background-image: url(cracked2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: rgb(217, 242, 217);
 }
 nav {
@@ -90,6 +92,7 @@ h2 {
 .tweets {
 	position: relative;
     left: 230px;
+		display: inline-block;
 }
 
 /* This is for Users page */
@@ -156,15 +159,17 @@ h2 {
 /*	for loctions/events page 	*/
 
 .lfield {
-	width: 170px;
+	width: 290px;
+	height: 250px;
 	background-color: rgba(0, 26, 0, 0.5);
-	margin-left: 110px;
+	margin: 0px;
+	padding: 10px;
+	margin-left: 50px;
 }
 
 .lactions {
 	width: 170px;
 	margin-top: 10px;
-	background-color: rgb();
 	margin-left: 110px;
 }
 
@@ -190,6 +195,27 @@ h2 {
     padding: 15px;
 }
 
+/*	footer	*/
+#bottom {
+	margin-top: 300px;
+	color: black;
+	/*position: relative;*/
+}
+
+.svg {
+	width:100%;
+	display:inline-block;
+	transform:scale(1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(2);
+	-o-transform:scale(2);
+}
+
+#infofoot {
+	position: relative;
+	color: black;
+}
 
 /*	event edit	*/
 #mv {
@@ -211,6 +237,7 @@ h2 {
 }
 
 
+
 /* 	This is for Users page 	*/
 .h1 {
 	text-align: center;
@@ -230,7 +257,7 @@ h2 {
 
 .form {
 	text-align: center;
-}
+}*/
 
 /*	Footer	*/
 #footsvg {
@@ -244,7 +271,7 @@ h2 {
 
 /* USER FORM */
 
-.user_form {
+/*.user_form {
 	display: block;
 	position: relative;
 	left: 80px;
@@ -277,4 +304,4 @@ h2 {
 	font-size: 60px;
 	color: green;
 	text-align: center;
-}
+}*/
