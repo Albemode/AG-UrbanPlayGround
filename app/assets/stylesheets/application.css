@@ -230,7 +230,15 @@ h2 {
 
 #infofoot {
 	position: relative;
+	float: left;
+
+}
+
+.copyright {
+	width: 700px;
 	color: black;
+	margin-top: 50px;
+	float: right;
 }
 
 /*	event edit	*/
