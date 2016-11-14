@@ -2,12 +2,28 @@
 * {
 	margin: 0 auto;
 }
+
+body {
+
+	background-color: rgb(217, 242, 217);
+}
+nav {
+		position: relative;;
+		background-size: contain;
+		background-repeat: repeat;
+		background-origin: content-box;
+		width: 100%;
+		height: 0%;
+		padding: inherit;
+}
+
 .navbar-brand {
 	color: green;
 	font-family: 'Luckiest Guy', cursive;
 	font-size: 40px;
 	margin-top: 25px;
 	text-shadow: 0 0 3px #ADFF2F;
+	opacity: 0.9;
 }
 
 
@@ -25,12 +41,11 @@ h2 {
 }
 /* Carousel */
 
-
 .car_img {
 	display: none;
 	height: 480px;
 }
-.overlay { 
+.overlay {
   color:#fff;
   position:absolute;
   z-index:12;
@@ -38,6 +53,10 @@ h2 {
   left:0;
   width:100%;
   text-align:center;
+}
+
+.navbar-nav {
+	/*background-color: rgb(255,0,255);*/
 }
 
 #overlay_h1 {
@@ -51,10 +70,13 @@ h2 {
     margin-top: 20px;
     height: 480px;
     border-radius: 80px;
+
 }
+
 .carousel-inner {
 	background: none;
 }
+
 
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
@@ -67,7 +89,7 @@ h2 {
 
 .tweets {
 	position: relative;
-    left: 730px;
+    left: 230px;
 }
 
 
@@ -92,6 +114,132 @@ h2 {
 	text-align: center;
 }
 
+
+/* USER FORM */
+
+.user_form {
+	display: block;
+	position: relative;
+	left: 80px;
+}
+
+#new_user {
+	left: 80px;
+}
+
+.image {
+	width: 100%;
+	height: 300px;
+}
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.headline {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 60px;
+	color: green;
+	text-align: center;
+}
+
+/*	for loctions/events page 	*/
+
+.lfield {
+	width: 170px;
+	background-color: rgba(0, 26, 0, 0.5);
+	margin-left: 110px;
+}
+
+.lactions {
+	width: 170px;
+	margin-top: 10px;
+	background-color: rgb();
+	margin-left: 110px;
+}
+
+
+#infobg {
+	background-color: rgba(0,0,0,0.6);
+	color: rgb(204, 255, 204);
+	width: 100%	;
+	padding: 40px;
+}
+
+.infobg td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.infobg  {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.infobg th, td {
+    padding: 15px;
+}
+
+
+/*	event edit	*/
+#mv {
+	width: 170px;
+	margin-top: 10px;
+	margin-left: 110px;
+	margin-right: 0px;
+}
+
+.promo {
+	background-image: url(Fatherkid1.jpeg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: sticky;
+	width: 400px;
+	height: 500px;
+	bottom: 300px;
+	margin-left: 500px;
+}
+
+
+/* 	This is for Users page 	*/
+.h1 {
+	text-align: center;
+	color: green;
+}
+
+.container {
+	text-align: center;
+	float: left;
+
+	padding: 20px;
+	max-width: 350px;
+	font-size: 14px;
+	border-style: solid;
+	border-color: transparent;;
+}
+
+.form {
+	text-align: center;
+}
+
+/*	Footer	*/
+#footsvg {
+	margin: 0 auto;
+	background-origin: content-box;
+}
+#Layer_2 {
+	color: white;
+	margin: auto;
+}
 
 /* USER FORM */
 
