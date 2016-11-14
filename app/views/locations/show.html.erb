@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @location.address %>
-</p>
+<div id="infoarea">
+  <p>
+    <strong>Address:</strong>
+    <%= @location.address %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @location.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @location.description %>
+  </p>
 
-<p>
-  <strong>Start at:</strong>
-  <%= @location.start_at %>
-</p>
+  <p>
+    <strong>Start at:</strong>
+    <%= @location.start_at %>
+  </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @location.title %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @location.title %>
+  </p>
+</div>
 
 <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom30&markers=#{@location.latitude},#{@location.longitude}&markers=#{@location.latitude},#{@location.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
             class: 'img-fluid img-rounded', alt: "#{@location.address} on the map"%>
