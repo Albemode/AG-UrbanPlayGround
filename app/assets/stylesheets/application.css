@@ -34,8 +34,16 @@ nav {
 h1 {
 	color: orange;
 }
+
+h2 {
+	text-shadow: 2px 2px black;
+}
 /* Carousel */
 
+.car_img {
+	display: none;
+	height: 480px;
+}
 .overlay {
   color:#fff;
   position:absolute;
@@ -48,7 +56,13 @@ h1 {
 
 .navbar-nav {
 	/*background-color: rgb(255,0,255);*/
+}
 
+#overlay_h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 52px;
+	color: white;
+	text-shadow: 2px 2px black;
 }
 
 .carousel{
@@ -138,7 +152,7 @@ h1 {
 
 
 
-/*for loctions/events page */
+/*	for loctions/events page 	*/
 
 .lfield {
 	width: 290px;
@@ -198,7 +212,7 @@ h1 {
 	color: white;
 }
 
-/*event edit*/
+/*	event edit	*/
 #mv {
 	width: 170px;
 	margin-top: 10px;
@@ -218,8 +232,13 @@ h1 {
 }
 
 
+<<<<<<< HEAD
 /* This is for Users page */
 /*.h1 {
+=======
+/* 	This is for Users page 	*/
+.h1 {
+>>>>>>> 8c6cf8c998a2cb9546fd6dc1ab3a6f8a9b8cc736
 	text-align: center;
 	color: green;
 }
@@ -239,6 +258,15 @@ h1 {
 	text-align: center;
 }*/
 
+/*	Footer	*/
+#footsvg {
+	margin: 0 auto;
+	background-origin: content-box;
+}
+#Layer_2 {
+	color: white;
+	margin: auto;
+}
 
 /* USER FORM */
 
