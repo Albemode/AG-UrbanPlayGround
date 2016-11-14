@@ -41,10 +41,6 @@ h2 {
 }
 /* Carousel */
 
-.car_img {
-	display: none;
-	height: 480px;
-}
 .overlay {
   color:#fff;
   position:absolute;
@@ -75,6 +71,7 @@ h2 {
 
 .carousel-inner {
 	background: none;
+	height: 580px;
 }
 
 
