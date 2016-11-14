@@ -4,6 +4,9 @@
 }
 
 body {
+	background-image: url(cracked2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: rgb(217, 242, 217);
 }
 nav {
@@ -89,6 +92,7 @@ h2 {
 .tweets {
 	position: relative;
     left: 230px;
+		display: inline-block;
 }
 
 /* This is for Users page */
@@ -193,23 +197,24 @@ h2 {
 
 /*	footer	*/
 #bottom {
-	margin-top: 1000px;
-	color: white;
+	margin-top: 300px;
+	color: black;
 	/*position: relative;*/
 }
 
 .svg {
-	width:50%; display:block;
-	transform:scale(2);
-	-webkit-transform:scale(2);
-	-moz-transform:scale(2);
+	width:100%;
+	display:inline-block;
+	transform:scale(1);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1);
 	-ms-transform:scale(2);
 	-o-transform:scale(2);
 }
 
 #infofoot {
 	position: relative;
-	color: white;
+	color: black;
 }
 
 /*	event edit	*/
@@ -232,13 +237,9 @@ h2 {
 }
 
 
-<<<<<<< HEAD
-/* This is for Users page */
-/*.h1 {
-=======
+
 /* 	This is for Users page 	*/
 .h1 {
->>>>>>> 8c6cf8c998a2cb9546fd6dc1ab3a6f8a9b8cc736
 	text-align: center;
 	color: green;
 }
