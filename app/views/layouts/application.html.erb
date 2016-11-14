@@ -19,9 +19,9 @@
   <body>
 <nav class="navbar navbar-static-top navbar-light bg-faded">
 
-  <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+  <svg id="navsvg" version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
   	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-  	 x="0px" y="0px" width="900.551px" height="500.253px" viewBox="0 0 463.551 274.253" enable-background="new 0 0 463.551 274.253"
+  	 x="0px" y="0px" width="100%" height="50%" viewBox="0 0 463.551 274.253" enable-background="new 0 0 463.551 274.253"
   	 xml:space="preserve">
   <metadata>
   	<sfw  xmlns="&ns_sfw;">
@@ -85,6 +85,22 @@
   <% end %>
       </ul>
     </nav>
+
     <%= yield %>
   </body>
+
+  <footer id="bottom">
+    <table>
+      <tr>
+        <td>Careers</td>
+        <td>Privacy</td>
+        <td>Create Ad</td>
+      </tr>
+      <tr>
+        <td>terms</td>
+        <td>Help</td>
+      </tr>
+    </table>
+    copyright urban playground
+  </footer>
 </html>
