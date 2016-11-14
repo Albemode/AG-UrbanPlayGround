@@ -176,7 +176,7 @@ h2 {
 	width: 290px;
 	height: 250px;
 	background-color: rgba(0, 26, 0, 0.5);
-	margin: 0px;
+	margin-top: 20px;
 	padding: 10px;
 	margin-left: 50px;
 }
@@ -211,7 +211,7 @@ h2 {
 
 /*	footer	*/
 #bottom {
-	margin-top: 300px;
+	margin-top: 100px;
 	color: black;
 	/*position: relative;*/
 }
@@ -240,16 +240,20 @@ h2 {
 }
 
 .promo {
-	background-image: url(Fatherkid1.jpeg);
+	background-image: url(intosunpath.jpeg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: sticky;
 	width: 400px;
-	height: 500px;
+	height: 300px;
 	bottom: 300px;
 	margin-left: 500px;
 }
 
+.edit_location {
+	width: 200px;
+	float: left;
+}
 
 
 /* 	This is for Users page 	*/
