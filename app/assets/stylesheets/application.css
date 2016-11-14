@@ -153,7 +153,7 @@ h2 {
 
 
 
-/*for loctions/events page */
+/*	for loctions/events page 	*/
 
 .lfield {
 	width: 170px;
@@ -169,7 +169,7 @@ h2 {
 }
 
 
-#infobg, table {
+#infobg {
 	background-color: rgba(0,0,0,0.6);
 	color: rgb(204, 255, 204);
 	width: 100%	;
@@ -191,7 +191,7 @@ h2 {
 }
 
 
-/*event edit*/
+/*	event edit	*/
 #mv {
 	width: 170px;
 	margin-top: 10px;
@@ -211,7 +211,7 @@ h2 {
 }
 
 
-/* This is for Users page */
+/* 	This is for Users page 	*/
 .h1 {
 	text-align: center;
 	color: green;
@@ -232,6 +232,15 @@ h2 {
 	text-align: center;
 }
 
+/*	Footer	*/
+#footsvg {
+	margin: 0 auto;
+	background-origin: content-box;
+}
+#Layer_2 {
+	color: white;
+	margin: auto;
+}
 
 /* USER FORM */
 
