@@ -211,6 +211,16 @@ h2 {
     padding: 15px;
 }
 
+/*	show locations	*/
+
+#infoarea {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(204, 255, 204);
+	width: 400px;
+	float: left;
+	padding: 40px;
+}
+
 /*	footer	*/
 #bottom {
 	margin-top: 100px;
