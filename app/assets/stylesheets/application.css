@@ -4,7 +4,6 @@
 }
 
 body {
-
 	background-color: rgb(217, 242, 217);
 }
 nav {
@@ -152,15 +151,17 @@ h2 {
 /*	for loctions/events page 	*/
 
 .lfield {
-	width: 170px;
+	width: 290px;
+	height: 250px;
 	background-color: rgba(0, 26, 0, 0.5);
-	margin-left: 110px;
+	margin: 0px;
+	padding: 10px;
+	margin-left: 50px;
 }
 
 .lactions {
 	width: 170px;
 	margin-top: 10px;
-	background-color: rgb();
 	margin-left: 110px;
 }
 
@@ -186,6 +187,26 @@ h2 {
     padding: 15px;
 }
 
+/*	footer	*/
+#bottom {
+	margin-top: 1000px;
+	color: white;
+	/*position: relative;*/
+}
+
+.svg {
+	width:50%; display:block;
+	transform:scale(2);
+	-webkit-transform:scale(2);
+	-moz-transform:scale(2);
+	-ms-transform:scale(2);
+	-o-transform:scale(2);
+}
+
+#infofoot {
+	position: relative;
+	color: white;
+}
 
 /*	event edit	*/
 #mv {
@@ -207,8 +228,13 @@ h2 {
 }
 
 
+<<<<<<< HEAD
+/* This is for Users page */
+/*.h1 {
+=======
 /* 	This is for Users page 	*/
 .h1 {
+>>>>>>> 8c6cf8c998a2cb9546fd6dc1ab3a6f8a9b8cc736
 	text-align: center;
 	color: green;
 }
@@ -226,7 +252,7 @@ h2 {
 
 .form {
 	text-align: center;
-}
+}*/
 
 /*	Footer	*/
 #footsvg {
@@ -240,7 +266,7 @@ h2 {
 
 /* USER FORM */
 
-.user_form {
+/*.user_form {
 	display: block;
 	position: relative;
 	left: 80px;
@@ -273,4 +299,4 @@ h2 {
 	font-size: 60px;
 	color: green;
 	text-align: center;
-}
+}*/
