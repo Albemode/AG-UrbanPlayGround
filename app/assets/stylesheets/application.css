@@ -87,13 +87,19 @@ h2 {
 	margin: 20px;
 }
 
+#mapcontain{
+	display: block;
+	float: left;
+	left: 30px;
+	padding: 10px;
+}
 
 .tweets {
 	position: relative;
-    left: 230px;
+    left: 90px;
+		float: left;
 		display: inline-block;
 }
-
 
 /* This is for Users page */
 .h1 {
