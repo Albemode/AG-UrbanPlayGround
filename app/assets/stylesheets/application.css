@@ -141,7 +141,7 @@ h2 {
 }
 
 #new_user {
-	color:white;
+	color:green;
 	font-family:'Poppins';
 	left: 80px;
 }
@@ -194,6 +194,7 @@ h2 {
 	color: rgb(204, 255, 204);
 	width: 100%	;
 	padding: 40px;
+	margin-top: 0;
 }
 
 .infobg td, th {
